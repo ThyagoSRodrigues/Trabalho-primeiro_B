@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo | Thyago Silveira Rodrigues_cc1m</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(15, 55, 141), rgb(102, 8, 179));
+        }
+        .box{
+            color: rgb(255, 247, 247);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            width: 40%;
+        }
+        fieldset{
+            border: 5px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 5px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .User{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 10px;
+            width: 100%;
+            letter-spacing: 10px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 20px;
+            color: dodgerblue;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(89, 0, 255));
+            width: 100%;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action=".">
+            <fieldset>
+                <legend><b>Meu Currículo</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="User" required>
+                    <label for="nome" class="labelInput">Nome:
+                        Thyago Silveira Rodrigues
+                    </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="User" required>
+                    <label for="email" class="labelInput">Email: Thyago09rodrigues@gmail.com</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="User" required>
+                    <label for="telefone" class="labelInput">Telefone: 
+                        (73)981923690
+                    </label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br><br>
+                <input type="radio" id="feminino" name="genero" value="feminino" required><b>Data de Nascimento:
+                    04/11/2002
+                </b>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="User" required>
+                    <label for="cidade" class="labelInput">Cidade de Nascimento:
+                    Itaperuna
+                    </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="User" required>
+                    <label for="estado" class="labelInput">Estado:
+                        Rio de Janeiro
+                    </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="User" required>
+                    <label for="endereco" class="labelInput">Objetivos:
+                     Me formar na faculdade   
+                    </label>
+                </div>
+                <br><br>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
